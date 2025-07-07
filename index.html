@@ -4,12 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+    <!-- navbar section -->
+    <header class="flex justify-between items-center px-2 ">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="20" viewBox="0 0 50 50" class="md:hidden">
+        <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+        </svg>
+
+        <div class="font-bold">Store</div>
+
+        <div class="flex md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[30px] h-[20px]" viewBox="0 0 512 512"><circle cx="256" cy="256" r="48"/><circle cx="256" cy="416" r="48"/><circle cx="256" cy="96" r="48"/></svg>
+        </div>
+        
+
+        <div class="hidden md:flex md:gap-1">
+            <input type="text" placeholder="search items" class="border rounded p-2 w-[350px]">
+            <button class="border rounded p-2 bg-white">search</button>
+        </div>
+        <ul class="hidden md:flex md:gap-5">
+            <a href="#"><li>Account</li></a>
+            <a href="#"><li>Help</li></a>
+            <a href="#"><li>Cart</li></a>
+        </ul>
+    </header>
     <main>
+        <!-- call to action section -->
+        <section class="py-5 md:flex md:justify-around bg-[#fe9900]" id="CTA">
+            <ul class="hidden md:flex md:flex-col md:gap-2 md:border md:w-[200px] md:rounded md:items-center text-white">
+                <li><a href="#" class=" hover:underline">Appliances</a></li>
+                <li><a href="#" class=" hover:underline">Phones & Tablets</a></li>
+                <li><a href="#" class=" hover:underline">Health & Beauty</a></li>
+                <li><a href="#" class=" hover:underline">Home & Office</a></li>
+                <li><a href="#" class=" hover:underline">Electronics</a></li>
+                <li><a href="#" class=" hover:underline">Fashion</a></li>
+                <li><a href="#" class=" hover:underline">Supermarket</a></li>
+                <li><a href="#" class=" hover:underline">Computing</a></li>
+                <li><a href="#" class=" hover:underline">Baby Products</a></li>
+                <li><a href="#" class=" hover:underline">Gaming</a></li>
+                <li><a href="#" class=" hover:underline">Musical Instruments</a></li>
+                <li><a href="#" class=" hover:underline">Other categories</a></li>
+            </ul>
+
+
+            <img class="rounded" src="https://ng.jumia.is/cms/0-1-initiatives/flashsale/2024/Desktop_Homepage_Slider__712x384.jpg" alt="">
+        </section>
         <section class="product"></section>
     </main>
     <footer></footer>
